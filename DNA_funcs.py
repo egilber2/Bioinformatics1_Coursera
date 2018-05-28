@@ -2,7 +2,7 @@
 def PatternCount(Text, Pattern):
     """Returns count of Pattern occurrences in a string Text.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     Text -- string of DNA
     Pattern -- pattern of DNA of interest
@@ -24,7 +24,7 @@ def PatternCount(Text, Pattern):
 def FrequentWords(Text, k):
     """Returns the most frequent k-mer in a string.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     Text -- the string of DNA
     k -- an integer for length of k-mer
@@ -56,7 +56,7 @@ def FrequentWords(Text, k):
 def revComplement(p):
     """Returns the reverse complement for strand of DNA.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     p -- string of DNA
     
@@ -82,7 +82,7 @@ def revComplement(p):
 def patternMatch(pattern, genome):
     """Returns index where pattern starts in genome.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     pattern -- string, DNA pattern
     genome -- string, DNA
@@ -134,7 +134,7 @@ def clump_find(genome, k, L, t):
 def symbolToNumber(symbol):
     """Converts DNA base to corresponding number.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     symbol -- DNA base
     
@@ -157,7 +157,7 @@ def symbolToNumber(symbol):
 def NumberToSymbol(num):
     """Coverts int to corresponding DNA base abbreviation.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     num -- int 0,1,2, or 3
     
@@ -179,7 +179,7 @@ def NumberToSymbol(num):
 def PatternToNumber(pattern):
     '''Converts DNA string to base 4 number.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     pattern -- string, DNA
     
@@ -198,7 +198,7 @@ def PatternToNumber(pattern):
 def NumberToPattern(index, k):
     """Converts an int to corresponding string of DNA.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     index -- int
     k -- int, length of k-mer
@@ -221,7 +221,7 @@ def NumberToPattern(index, k):
 def ComputingFrequencies(Text, k):
     """Creates frequency array k-mers in DNA string.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     Text -- string of DNA
     k -- int for k-mer length
@@ -237,14 +237,13 @@ def ComputingFrequencies(Text, k):
         pattern = Text[i:i+k]
         j = PatternToNumber(pattern)
         FrequencyArray[j] += 1
-    #a = print(*FrequencyArray, sep=' ')
     return FrequencyArray
 
 
 def FasterFrequentWords(Text, k):
     """Returns the most frequent k-mer in a string.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     Text -- the string of DNA
     k -- an integer for length of k-mer
@@ -267,7 +266,7 @@ def FindingFrequentWordsBySorting(Text , k):
     """Returns the most frequent k-mer in a DNA string using a sorted 
     frequency array.
     
-    Keyword agruments:
+    Keyword arguments:
     ------------------
     Text -- the string of DNA
     k -- an integer for length of k-mer
@@ -303,7 +302,7 @@ def ClumpFinding(genome, k, t, L):
     """Identifies (L,t)-clumps that occur at least t times in the genome
     in a window of length L.
     
-     Keyword agruments:
+     Keyword arguments:
     ------------------
     genome -- string of DNA bases
     k -- int for k-mer length
@@ -336,7 +335,7 @@ def BetterClumpFinding(genome, k, t, L):
     """Identifies (L,t)-clumps that occur at least t times in the genome
     in a window of length L utilizing a frequency array.
     
-     Keyword agruments:
+     Keyword arguments:
     ------------------
     genome -- string of DNA bases
     k -- int for k-mer length
